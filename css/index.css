@@ -1,0 +1,527 @@
+header {
+  width:100%;
+  position:static;
+  left:0;
+  right:0;
+  cursor:pointer;
+  z-index:999;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    flex-wrap: wrap;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:100%;
+    overflow-x: visible;
+    padding-top:100;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:100px;
+   width:100%;
+   z-index:999;
+}
+
+#container_intro {
+  height: 300px;
+  width: auto;
+  margin-left: 22em;
+  margin-top: 22.5em;
+  background: transparent;
+  position: fixed;
+  z-index: 1;
+}
+
+.loading {
+  margin-top: 10em;
+  text-align: center;
+  color: gray;
+}
+
+#container_intro4 {
+  min-height:800px;
+  width: 1225px;
+  margin-left: 4em;
+  margin-top: -25.5em;
+  background: transparent;
+  position: absolute;
+
+}
+
+.loading {
+  margin-top: 10em;
+  text-align: center;
+  color: gray;
+}
+
+.highcharts-data-label {
+  font-family: 'Arial';
+  opacity: 0.65;
+}
+
+.highcharts-legend-title {
+  fill: #59585a;
+  font-style: bold;
+  font-size: 5em;
+  letter-spacing: 0em;
+}
+
+.highcharts-tooltip {
+  font-family: 'Arial';
+  color: #acacad;
+  letter-spacing: 0em;
+  font-size: 16px;
+}
+
+#container_dem {
+  min-height:800px;
+  width: 1225px;
+  margin-left: 5em;
+  margin-top: -24em;
+  background: transparent;
+  position: static;
+  z-index: 1;
+}
+
+.loading {
+  margin-top: 10em;
+  text-align: center;
+  color: gray;
+}
+
+.highcharts-data-label {
+  font-family: 'Arial';
+  opacity: 0.65;
+}
+
+.highcharts-legend-title {
+  fill: #59585a;
+  font-style: bold;
+  font-size: 5em;
+  letter-spacing: 0em;
+}
+
+.highcharts-tooltip {
+  font-family: 'Arial';
+  color: #acacad;
+  letter-spacing: 0em;
+  font-size: 16px;
+}
+
+#container_comms {
+  min-height:800px;
+  width: 1225px;
+  margin-left: 4em;
+  margin-top: -15em;
+  background: transparent;
+  position: static;
+  z-index: 1;
+}
+
+.loading {
+  margin-top: 10em;
+  text-align: center;
+  color: gray;
+}
+
+.highcharts-data-label {
+  font-family: 'Arial';
+  opacity: 0.65;
+}
+
+.highcharts-legend-title {
+  fill: #59585a;
+  font-style: bold;
+  font-size: 5em;
+  letter-spacing: 0em;
+}
+
+.highcharts-tooltip {
+  font-family: 'Arial';
+  color: #acacad;
+  letter-spacing: 0em;
+  font-size: 16px;
+}
+
+#container_health, #container_health2 {
+  min-height:800px;
+  width: 1225px;
+  margin-left: 3em;
+  margin-top: -13em;
+  background: transparent;
+  position: static;
+  z-index: 1;
+}
+
+.loading {
+  margin-top: 10em;
+  text-align: center;
+  color: gray;
+}
+
+.highcharts-data-label {
+  font-family: 'Arial';
+  opacity: 0.65;
+}
+
+.highcharts-legend-title {
+  fill: #59585a;
+  font-style: bold;
+  font-size: 5em;
+  letter-spacing: 0em;
+}
+
+.highcharts-tooltip {
+  font-family: 'Arial';
+  color: #acacad;
+  letter-spacing: 0em;
+  font-size: 16px;
+}
+
+#container_foodsec {
+  height: 800px;
+  width: 1225px;
+  margin-left: 4em;
+  margin-top: -20.5em;
+  background: transparent;
+  position: static;
+  z-index: -1;
+}
+
+.loading {
+  margin-top: 10em;
+  text-align: center;
+  color: gray;
+}
+
+.highcharts-data-label {
+  font-family: 'Helvetica';
+  opacity: 0.65;
+}
+
+.highcharts-legend-title {
+  fill: #59585a;
+  letter-spacing: 0em;
+  font-style: bold;
+  font-size: 5em;
+}
+
+.highcharts-tooltip {
+  font-family: 'Arial';
+  color: #acacad;
+  letter-spacing: 0em;
+  font-size: 16px;
+}
+
+#container_pro, #container_pro2 {
+  height: 800px;
+  width: 1225px;
+  margin-left: 4em;
+  margin-top: -21.5em;
+  background: transparent;
+  position: static;
+  z-index: -1;
+}
+
+.loading {
+  margin-top: 10em;
+  text-align: center;
+  color: gray;
+}
+
+.highcharts-data-label {
+  font-family: 'Helvetica';
+  opacity: 0.65;
+}
+
+.highcharts-legend-title {
+  fill: #59585a;
+  letter-spacing: 0em;
+  font-style: bold;
+  font-size: 5em;
+}
+
+.highcharts-tooltip {
+  font-family: 'Arial';
+  color: #acacad;
+  letter-spacing: 0em;
+  font-size: 16px;
+}
+
+#container_nfi, #container_shelter {
+  height: 800px;
+  width: 1225px;
+  margin-left: 4em;
+  margin-top: -23em;
+  background: transparent;
+  position: static;
+  z-index: 1;
+}
+
+.loading {
+  margin-top: 10em;
+  text-align: center;
+  color: gray;
+}
+
+.highcharts-data-label {
+  font-family: 'Helvetica';
+  opacity: 0.65;
+}
+
+.highcharts-legend-title {
+  fill: #59585a;
+  letter-spacing: 0em;
+  font-style: bold;
+  font-size: 5em;
+}
+
+.highcharts-tooltip {
+  font-family: 'Arial';
+  color: #acacad;
+  letter-spacing: 0em;
+  font-size: 16px;
+}
+
+#container_livli, #container_expen {
+  height: 800px;
+  width: 1225px;
+  margin-left: 5em;
+  margin-top: -24.5em;
+  background: transparent;
+  position: static;
+  z-index: 1;
+}
+
+.loading {
+  margin-top: 10em;
+  text-align: center;
+  color: gray;
+}
+
+.highcharts-data-label {
+  font-family: 'Helvetica';
+  opacity: 0.65;
+}
+
+.highcharts-legend-title {
+  fill: #59585a;
+  font-style: bold;
+  font-size: 5em;
+  letter-spacing: 0em;
+}
+
+.highcharts-tooltip {
+  font-family: 'Arial';
+  color: #acacad;
+  letter-spacing: 0em;
+  font-size: 16px;
+}
+
+#container_edu_girls, #container_edu_boys, #container_SM {
+  height: 800px;
+  width: 1225px;
+  margin-left: 3em;
+  margin-top: -17.5em;
+  background: transparent;
+  position: static;
+  z-index: -1;
+}
+
+.loading {
+  margin-top: 10em;
+  text-align: center;
+  color: gray;
+}
+
+.highcharts-data-label {
+  font-family: 'Helvetica';
+  opacity: 0.65;
+}
+
+.highcharts-legend-title {
+  fill: #59585a;
+  font-style: bold;
+  font-size: 5em;
+  letter-spacing: 0em;
+}
+
+.highcharts-tooltip {
+  font-family: 'Arial';
+  color: #acacad;
+  letter-spacing: 0em;
+  font-size: 16px;
+}
+
+#chartpro1, #chartProCamp {
+  height: 350px;
+  width: 325px;
+  margin-top: 1.5em;
+  margin-left: 30em;
+  background: transparent;
+}
+
+.highcharts-title {
+  fill: #434348;
+  font-weight: bold;
+  font-family: 'Arial';
+  color: #59585A;
+  letter-spacing: 0em;
+  font-size: 12px;
+}
+
+#textbox {
+  height: 100%;
+  width: 475px;
+  margin-left: 1.5em;
+  margin-top: -0.2em;
+  font-size: 12px;
+  letter-spacing: 0em;
+  font-family: 'Arial';
+  background-color: #f0f0f0;
+  border-style: solid;
+  border-color: #9fc9e7;
+  border-width: 0px;
+  opacity: 0.8;
+  padding: 10px;
+  text-align: justify;
+}
+
+#chartDemAll, #chartDemCamp, #chartrisksboys, #chartRiskBoysCamp, #chartrisksgirls, #chartRiskGirlsCamp, #charthealth, #charthealthseeking, #chartEduBoys, #chartEduBoysCamp, #chartEduGirls, #chartEduGirlsCamp, #chartnfi, #chartNfiCamp, #chartshelter, #chartExpenCamp, #chartlivli3 {
+  height: 320px;
+  width: 375px;
+  margin-top: 1em;
+  margin-left: 27em;
+  background: transparent;
+  position: static;
+  z-index: 99999;
+}
+
+.highcharts-title {
+  fill: #434348;
+  font-weight: bold;
+  font-family: 'Arial';
+  color: #59585a;
+  font-size: 12px;
+  letter-spacing: 0em;
+}
+
+.highcharts-legend-title {
+  font-family: 'Arial';
+  color: #acacad;
+  letter-spacing: 0em;
+  font-size: 10px;
+}
+
+#chartsm1, #chartsm2, #chartSMCamp, #chartcomms, #chartlivli, #chartlivli2 {
+  height: 250px;
+  width: 350px;
+  margin-top: 2em;
+  margin-left: 27em;
+  background: transparent;
+  position:static;
+  z-index: 99999;
+
+}
+
+.highcharts-title {
+  fill: #434348;
+  font-weight: bold;
+  font-family: 'Arial';
+  color: #59585a;
+  font-size: 12px;
+  letter-spacing: 0em;
+}
+
+.highcharts-legend-title {
+  font-family: 'Arial';
+  color: #acacad;
+  letter-spacing: 0em;
+  font-size: 10px;
+}
+
+#chartfoodsec, #chartfoodsec2, #chartfoodsec3, #charthealth2, #chartcomms3 {
+  height: 200px;
+  width: 300px;
+  margin-top: 1.5em;
+  margin-left: 27em;
+  background: transparent;
+  position:static;
+  z-index: 99999;
+
+}
+
+.highcharts-title {
+  fill: #434348;
+  font-weight: bold;
+  font-family: 'Arial';
+  color: #59585a;
+  letter-spacing: 0em;
+  font-size: 12px;
+}
+
+.highcharts-legend-title {
+  font-family: 'Arial';
+  color: #acacad;
+  letter-spacing: 0em;
+  font-size: 10px;
+}
+
+#tabs {
+  border-right: 1.6px solid #ffff;
+  border-left: 1.6px solid #ffff;
+  z-index: 9999;
+}
+
+.li {
+  border-right: 1.6px solid #ffff;
+  border-left: 1.6px solid #ffff;
+
+}
+
+.active {
+  background-color: #0371c0;
+  color: white;
+  border-right: 1.8px solid #FAEB00;
+  border-left: 1.8px solid #FAEB00;
+}
+
+
+#tab {
+}
+
+.tabs .tab a {
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 0em;
+    text-transform: capitalize;
+}
+
+a:hover {
+  color: #FAEB00;
+}
+
+
+#dropdown1, #dropdown2, #dropdown3, #dropdown4, #dropdown5, #dropdown6 {
+  position: absolute;
+  z-index: 99999;
+  coverTrigger: false;
+}
+
+.li {
+  coverTrigger: false;
+  height: 350px;
+}
