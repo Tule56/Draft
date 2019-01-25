@@ -101,7 +101,7 @@ $(".dropdown-trigger").dropdown();
     },
 
     title: {
-      text: '% HH reporting awareness of methods of finding information'
+      text: '% households reporting awareness of methods of finding information'
     },
 
     subtitle: {

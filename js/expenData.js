@@ -188,10 +188,6 @@ $('#chartlivli3').highcharts({
                 events: {
                     click: function (e) {
 
-                      // e is the event object in JS.
-                      // in this case it corresponds to all of the data around the click event
-                      // LOOK AT THIS IN THE BROWSER CONSOLE
-                      // DIG THROUGH THE LAYERS
                       console.log(e);
 
                       var camp_name = e.point.New_Camp_N;
