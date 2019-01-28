@@ -2,11 +2,11 @@ Highcharts.setOptions({
   colors: ['#59585a', '#0371c0', '#95a0a9', '#d2cbb8', '#9fc9e7']
 });
 
+$(".dropdown-trigger").dropdown();
+
+"use strict";
+
 $(function() {
-
-  $(".dropdown-trigger").dropdown();
-
-  "use strict";
 
   var chartRisksBoysCamp;
   var last_camp_name;
@@ -109,7 +109,9 @@ $(function() {
        }]
      });
 
-     function make_riskboys_chart(rb_data = [], camp_name) {
+     function make_riskboys_chart() {
+          var rb_data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+          var camp_name = arguments[1];
          chartRiskBoysCamp = $('#chartRiskBoysCamp').highcharts({
            chart: {
 
@@ -236,8 +238,9 @@ $(function() {
             var camp_name = e.point.New_Camp_N;
             var camp_data = data_risksboys_camp[camp_name];
             rb_item_data = camp_data;
-            rb_item_data = rb_item_data.map(x => (x * 100));
-
+            rb_item_data = rb_item_data.map(function (x) {
+                        return x * 100;
+            });
 
             if (camp_name !== last_camp_name) {
               make_riskboys_chart(rb_item_data, camp_name);

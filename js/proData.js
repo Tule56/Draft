@@ -2,11 +2,11 @@ Highcharts.setOptions({
   colors: ['#0371c0', '#59585a', '#95a0a9', '#d2cbb8', '#f6abac']
 });
 
+  "use strict";
+
 $(function() {
 
   $(".dropdown-trigger").dropdown();
-
-  "use strict";
 
   var chartProCamp;
   var last_camp_name;
@@ -108,7 +108,9 @@ $(function() {
     }]
 	});
 
-  function make_pro_chart(pro_data = [], camp_name) {
+  function make_pro_chart() {
+    var pro_data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+    var camp_name = arguments[1];
       chartProCamp = $('#chartProCamp').highcharts({
         chart: {
          type: 'heatmap', backgroundColor: 'transparent',
@@ -199,7 +201,9 @@ $(function() {
                       var camp_name = e.point.New_Camp_N;
                       var camp_data = data_pro_camp[camp_name];
                       pro_item_data = camp_data;
-                      pro_item_data = pro_item_data.map(x => (x));
+                      pro_item_data = pro_item_data.map(function (x) {
+                                            return x;
+                      });
 
                       if (camp_name !== last_camp_name) {
                         make_pro_chart(pro_item_data, camp_name);

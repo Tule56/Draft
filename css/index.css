@@ -371,6 +371,13 @@ body {
 
 }
 
+dropdown-trigger{
+  height: 100%;
+  width: 400px;
+    font-family: 'Arial';
+
+}
+
 #textbox {
   height: 100%;
   width: 475px;
@@ -390,7 +397,7 @@ body {
 
 #chartDemAll, #chartDemCamp, #chartrisksboys, #chartRiskBoysCamp, #chartrisksgirls, #chartRiskGirlsCamp, #charthealth, #charthealthseeking, #chartEduBoys, #chartEduBoysCamp, #chartEduGirls, #chartEduGirlsCamp, #chartnfi, #chartNfiCamp, #chartshelter, #chartExpenCamp, #chartlivli3 {
   height: 320px;
-  width: 375px;
+  width: 365px;
   margin-top: 1em;
   margin-left: 0em;
   background: transparent;

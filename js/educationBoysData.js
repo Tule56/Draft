@@ -2,11 +2,11 @@ Highcharts.setOptions({
   colors: ['#0371c0', '#59585a', '#95a0a9', '#d2cbb8', '#f6abac']
 });
 
-$(function() {
-
 $(".dropdown-trigger").dropdown();
 
 "use strict";
+
+$(function() {
 
 var chartEduBoysCamp;
 var last_camp_name;
@@ -130,7 +130,10 @@ var data_eduboys_camp = {
 	]
   });
 
-  function make_eduboys_chart(ngo_data = [],mosque_data = [], camp_name) {
+  function make_eduboys_chart() {
+    var ngo_data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+    var mosque_data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
+    var camp_name = arguments[2];
       chartEduBoysCamp = $('#chartEduBoysCamp').highcharts({
         chart: {
 
@@ -236,9 +239,13 @@ $.getJSON('data/campsjoin.geojson', function (geojson) {
             var camp_name = e.point.New_Camp_N;
             var camp_data = data_eduboys_camp[camp_name];
             eduboys_ngo_data = camp_data[1];
-            eduboys_ngo_data = eduboys_ngo_data.map(x => (x * 100));
+            eduboys_ngo_data = eduboys_ngo_data.map(function (x) {
+                        return x * 100;
+            });
             eduboys_mosque_data = camp_data[0];
-            eduboys_mosque_data = eduboys_mosque_data.map(x => (x * 100));
+            eduboys_mosque_data = eduboys_mosque_data.map(function (x) {
+                        return x * 100;
+            });
 
             if (camp_name !== last_camp_name) {
               make_eduboys_chart(eduboys_ngo_data, eduboys_mosque_data, camp_name);

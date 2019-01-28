@@ -2,8 +2,10 @@ Highcharts.setOptions({
   colors: ['#59585a', '#0371c0',  '#95a0a9', '#d2cbb8', '#9fc9e7']
 });
 
+"use strict";
 
 $(function() {
+
 
 
   var chartSMCamp;
@@ -90,10 +92,10 @@ $(function() {
     },
 
     title: {
-      text: `<span style="font-size: 22px; font-family:'Arial';  color:#59585a; font-weight: bold; letter-spacing:0em;">Cyclone Preparation</span><br><span style="font-size: 22px; font-family:'Arial'; color:#666; font-weight: normal; letter-spacing:0em;">Across All Camps</span>`
+      text: "<span style=\"font-size: 22px; font-family:'Arial';  color:#59585a; font-weight: bold; letter-spacing:0em;\">Cyclone Preparation</span><br><span style=\"font-size: 22px; font-family:'Arial'; color:#666; font-weight: normal; letter-spacing:0em;\">Across All Camps</span>"
     },
     subtitle: {
-      text: `<span style="font-size: 12px; color:#59585a; letter-spacing:0em; font-family:'Arial';">% households reporting steps they would take to prepare for an approaching cyclone</span>`
+      text: "<span style=\"font-size: 12px; color:#59585a; letter-spacing:0em; font-family:'Arial';\">% households reporting steps they would take to prepare for an approaching cyclone</span>"
     },
 
     credits: {
@@ -138,7 +140,9 @@ $(function() {
     }]
   });
 
-  function make_sm_chart(sm_data = [], camp_name) {
+  function make_sm_chart() {
+    var sm_data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+    var camp_name = arguments[1];
       chartSMCamp = $('#chartSMCamp').highcharts({
         chart: {
 
@@ -146,10 +150,10 @@ $(function() {
          },
 
          title: {
-           text: `<span style="font-size: 22px; font-family:'Arial';  color:#59585a; font-weight: bold; letter-spacing:0em;">Cyclone Preparation</span><br><span style="font-size: 22px; font-family:'Arial'; color:#0371c0; font-weight: normal; letter-spacing:0em;">${camp_name}</span>`
+           text: "<span style=\"font-size: 22px; font-family:'Arial';  color:#59585a; font-weight: bold; letter-spacing:0em;\">Cyclone Preparation</span><br><span style=\"font-size: 22px; font-family:'Arial'; color:#0371c0; font-weight: normal; letter-spacing:0em;\">" + camp_name + "</span>"
          },
          subtitle: {
-           text: `<span style="font-size: 12px; color:#59585a; letter-spacing:0em; font-family:'Arial';">% households reporting steps they would take to prepare for an approaching cyclone</span>`
+           text: "<span style=\"font-size: 12px; color:#59585a; letter-spacing:0em; font-family:'Arial';\">% households reporting steps they would take to prepare for an approaching cyclone</span>"
          },
         credits: {
           enabled: false
@@ -188,7 +192,7 @@ $(function() {
 
             tooltip: {
               formatter: function() {
-                return '<b>' + Highcharts.numberFormat(Math.abs(this.point.y), 0) + '%</b> of households in '+ `<span style="color:#0371c0; font-weight: bold;">${camp_name}</span>`+ ' reporting that they would<br>' + '<b>' + this.point.category + '</b>' + ' in the event of an approaching cyclone';
+                return '<b>' + Highcharts.numberFormat(Math.abs(this.point.y), 0) + '%</b> of households in '+ "<span style=\"color:#0371c0; font-weight: bold;\">" + camp_name + "</span>"+ ' reporting that they would<br>' + '<b>' + this.point.category + '</b>' + ' in the event of an approaching cyclone';
               }
             },
         series: [{
@@ -232,7 +236,9 @@ $(function() {
                       var camp_name = e.point.New_Camp_N;
                       var camp_data = data_sm_camp[camp_name];
                       sm_item_data = camp_data;
-                      sm_item_data = sm_item_data.map(x => (x * 100));
+                      sm_item_data = sm_item_data.map(function (x) {
+                                            return x * 100;
+                      });
 
 
                       if (camp_name !== last_camp_name) {

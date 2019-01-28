@@ -2,11 +2,12 @@ Highcharts.setOptions({
   colors: ['#59585a','#0371c0',  '#95a0a9', '#d2cbb8', '#9fc9e7']
 });
 
-$(function() {
-
 $(".dropdown-trigger").dropdown();
 
 "use strict";
+
+$(function() {
+
 
 var chartExpenCamp;
 var last_camp_name;
@@ -107,7 +108,9 @@ $('#chartlivli3').highcharts({
     }]
 	});
 
-  function make_expen_chart(expen_data = [], camp_name) {
+  function make_expen_chart() {
+    var expen_data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+    var camp_name = arguments[1];
       chartExpenCamp = $('#chartExpenCamp').highcharts({
         chart: {
 
@@ -195,7 +198,9 @@ $('#chartlivli3').highcharts({
                       var camp_name = e.point.New_Camp_N;
                       var camp_data = data_expen_camp[camp_name];
                       expen_item_data = camp_data;
-                      expen_item_data = expen_item_data.map(x => (x));
+                      expen_item_data = expen_item_data.map(function (x) {
+                                            return x;
+                      });
 
                       if (camp_name !== last_camp_name) {
                         make_expen_chart(expen_item_data, camp_name);

@@ -116,7 +116,9 @@ $('#chartnfi').highcharts({
      }]
    });
 
-function make_nfi_chart(nfi_data = [], camp_name) {
+   function make_nfi_chart() {
+     var nfi_data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+     var camp_name = arguments[1];
     chartNfiCamp = $('#chartNfiCamp').highcharts({
       chart: {
 
@@ -207,7 +209,9 @@ function make_nfi_chart(nfi_data = [], camp_name) {
                     var camp_name = e.point.New_Camp_N;
                     var camp_data = data_nfi_camp[camp_name];
                     nfi_item_data = camp_data;
-                    nfi_item_data = nfi_item_data.map(x => (x * 100));
+                    nfi_item_data = nfi_item_data.map(function (x) {
+                                        return x * 100;
+                    });
 
 
                     if (camp_name !== last_camp_name) {

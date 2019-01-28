@@ -2,13 +2,15 @@ Highcharts.setOptions({
   colors: ['#0371c0', '#59585a', '#95a0a9', '#d2cbb8', '#f6abac']
 });
 
+"use strict";
+
+
 $(function() {
 
   $('body').css('min-height', screen.height);
 
   $(".dropdown-trigger").dropdown();
 
-  "use strict";
 
 $.getJSON('data/campsjoin.geojson', function(geojson) {
 

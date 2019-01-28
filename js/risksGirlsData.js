@@ -2,11 +2,12 @@ Highcharts.setOptions({
   colors: ['#59585a', '#0371c0', '#95a0a9', '#d2cbb8', '#9fc9e7']
 });
 
+"use strict";
+
 $(function() {
 
   $(".dropdown-trigger").dropdown();
 
-  "use strict";
 
   var chartRisksGirlsCamp;
   var last_camp_name;
@@ -108,7 +109,9 @@ $(function() {
        }]
      });
 
-     function make_riskgirls_chart(rg_data = [], camp_name) {
+     function make_riskgirls_chart() {
+          var rg_data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+          var camp_name = arguments[1];
          chartRiskBoysCamp = $('#chartRiskGirlsCamp').highcharts({
            chart: {
 
@@ -234,7 +237,9 @@ $(function() {
             var camp_name = e.point.New_Camp_N;
             var camp_data = data_risksgirls_camp[camp_name];
             rg_item_data = camp_data;
-            rg_item_data = rg_item_data.map(x => (x * 100));
+            rg_item_data = rg_item_data.map(function (x) {
+                        return x * 100;
+            });
 
 
             if (camp_name !== last_camp_name) {
