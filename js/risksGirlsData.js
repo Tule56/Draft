@@ -6,6 +6,8 @@ $(function() {
 
   $(".dropdown-trigger").dropdown();
 
+  "use strict";
+
   var chartRisksGirlsCamp;
   var last_camp_name;
   var rg_item_data;
@@ -56,10 +58,10 @@ $(function() {
        },
 
        title: {
-         text: `<span style="font-size: 22px; font-family:'Arial';  color:#59585a; font-weight: normal; letter-spacing:0em;">Reported Safety Concerns for Girls</span><br><span style="font-size: 22px; font-family:'Arial'; color:#666; font-weight: bold; letter-spacing:0em;">Across All Camps</span>`
+         text: "<span style=\"font-size: 22px; font-family:'Arial';  color:#59585a; font-weight: normal; letter-spacing:0em;\">Reported Safety Concerns for Girls</span><br><span style=\"font-size: 22px; font-family:'Arial'; color:#666; font-weight: bold; letter-spacing:0em;\">Across All Camps</span>"
        },
        subtitle: {
-         text: `<span style="font-size: 12px; color:#59585a; letter-spacing:0em; font-family:'Arial';">% of households reporting safety concerns (fears) for girls aged under 18, by type of safety concern</span>`
+         text: "<span style=\"font-size: 12px; color:#59585a; letter-spacing:0em; font-family:'Arial';\">% of households reporting safety concerns (fears) for girls aged under 18, by type of safety concern</span>"
        },
 
      credits:
@@ -113,10 +115,10 @@ $(function() {
                 type: 'bar', backgroundColor: 'transparent',
             },
             title: {
-              text: `<span style="font-size: 22px; font-family:'Arial';  color:#59585a; font-weight: bold; letter-spacing:0em;">Reported Safety Concerns for Girls</span><br><span style="font-size: 22px; font-family:'Arial'; color:#0371c0; font-weight: normal; letter-spacing:0em;">${camp_name}</span>`
+              text: "<span style=\"font-size: 22px; font-family:'Arial';  color:#59585a; font-weight: bold; letter-spacing:0em;\">Reported Safety Concerns for Girls</span><br><span style=\"font-size: 22px; font-family:'Arial'; color:#0371c0; font-weight: normal; letter-spacing:0em;\">" + camp_name + "</span>"
             },
             subtitle: {
-              text: `<span style="font-size: 12px; color:#59585a; letter-spacing:0em; font-family:'Arial';">% of households reporting safety concerns (fears) for girls aged under 18, by type of safety concern</span>`
+              text: "<span style=\"font-size: 12px; color:#59585a; letter-spacing:0em; font-family:'Arial';\">% of households reporting safety concerns (fears) for girls aged under 18, by type of safety concern</span>"
             },
            credits: {
              enabled: false
@@ -153,7 +155,7 @@ $(function() {
            },
            tooltip: {
               formatter: function () {
-                  return '<b>'+ Highcharts.numberFormat(Math.abs(this.point.y), 0)+'%</b> of households in ' + `<span style="color:#0371c0; font-weight: bold; letter-spacing:0em;">${camp_name}</span>`+ ' reporting <b>'+ this.point.category+ '</b><br>as a safety concern for girls under 18'
+                  return '<b>'+ Highcharts.numberFormat(Math.abs(this.point.y), 0)+'%</b> of households in ' + "<span style=\"color:#0371c0; font-weight: bold; letter-spacing:0em;\">" + camp_name + "</span>"+ ' reporting <b>'+ this.point.category+ '</b><br>as a safety concern for girls under 18'
                       ;
               }
           },

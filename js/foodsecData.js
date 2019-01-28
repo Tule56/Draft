@@ -199,7 +199,7 @@ $(".dropdown-trigger").dropdown();
 
     tooltip: {
       formatter: function() {
-        return '<b>' + Highcharts.numberFormat(Math.abs(this.point.y), 0) + '%</b> of HH reporting receiving food assistance from ' + '<b>' + this.point.category + '</b>' + '<br>in the 30 days prior to data collection';
+        return '<b>' + Highcharts.numberFormat(Math.abs(this.point.y), 0) + '%</b> of HH reporting receiving food assistance from<br>' + '<b>' + this.point.category + '</b>' + ' in the 30 days prior to data collection';
       }
     },
 
