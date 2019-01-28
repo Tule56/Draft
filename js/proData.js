@@ -6,6 +6,8 @@ $(function() {
 
   $(".dropdown-trigger").dropdown();
 
+  "use strict";
+
   var chartProCamp;
   var last_camp_name;
   var pro_item_data;
@@ -52,7 +54,7 @@ $(function() {
     },
 
     title: {
-      text: `<span style="font-size: 22px; font-family:'Helvetica';  color:#59585a; font-weight: bold"; letter-spacing:0em;>Areas Reported Unsafe</span><br><span style="font-size: 18px; font-family:'Helvetica'; color:#666; font-weight: normal; letter-spacing:0em;">Across All Camps</span>`
+      text: "<span style=\"font-size: 22px; font-family:'Helvetica';  color:#59585a; font-weight: bold\"; letter-spacing:0em;>Areas Reported Unsafe</span><br><span style=\"font-size: 18px; font-family:'Helvetica'; color:#666; font-weight: normal; letter-spacing:0em;\">Across All Camps</span>"
     },
 	subtitle: {
         text: '% of households reporting areas of the camp where different household members feel unsafe, by age and gender'
@@ -115,7 +117,7 @@ $(function() {
 
 
          title: {
-           text: `<span style="font-size: 22px; font-family:'Arial';  color:#59585a; font-weight: bold; letter-spacing:0em;">Areas Reported Unsafe</span><br><span style="font-size: 22px; font-family:'Arial'; color:#0371c0; font-weight: normal; letter-spacing:0em;">${camp_name}</span>`
+           text: "<span style=\"font-size: 22px; font-family:'Arial';  color:#59585a; font-weight: bold; letter-spacing:0em;\">Areas Reported Unsafe</span><br><span style=\"font-size: 22px; font-family:'Arial'; color:#0371c0; font-weight: normal; letter-spacing:0em;\">" + camp_name + "</span>"
          },
      	subtitle: {
              text: '% of households reporting areas of the camp where different household members feel unsafe, by age and gender'
@@ -151,7 +153,7 @@ $(function() {
 
      tooltip: {
          formatter: function () {
-             return '<b>' + this.point.value + '</b>% of <b>' +this.series.xAxis.categories[this.point.x] + ' in '+ `<span style="color:#0371c0; font-weight: bold;">${camp_name}</span>`+ '</b> reported<br>feeling unsafe at <b>' +
+             return '<b>' + this.point.value + '</b>% of <b>' +this.series.xAxis.categories[this.point.x] + ' in '+ "<span style=\"color:#0371c0; font-weight: bold;\">" + camp_name + "</span>"+ '</b> reported<br>feeling unsafe at <b>' +
                    this.series.yAxis.categories[this.point.y] + '</b>';
          }
      },
@@ -231,8 +233,8 @@ $(function() {
         },
         align: 'center',
         verticalAlign: 'bottom',
-      x:330,
-      y:-50,
+      x:300,
+      y:-60,
       itemMarginTop: 10,
       symbolWidth: 250,
       floating:true,

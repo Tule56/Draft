@@ -6,6 +6,8 @@ $(function() {
 
 $(".dropdown-trigger").dropdown();
 
+"use strict";
+
   $.getJSON('data/campsjoin.geojson', function(geojson) {
 
     Highcharts.mapChart('container_livli', {

@@ -2,13 +2,16 @@ Highcharts.setOptions({
   colors: ['#0371c0', '#59585a', '#95a0a9', '#d2cbb8', '#f6abac']
 });
 
-
 $(function() {
 
   $('body').css('min-height', screen.height);
 
   $(".dropdown-trigger").dropdown();
 
+<<<<<<< HEAD
+=======
+  "use strict";
+>>>>>>> bgd-msna-dev
 
 $.getJSON('data/campsjoin.geojson', function(geojson) {
 
@@ -37,8 +40,20 @@ $.getJSON('data/campsjoin.geojson', function(geojson) {
     legend: {
       enabled: true,
       title: {
-        text: ''
+        text: 'Assessed Camps<br><br><span style="font-size: 16px; color:#59585a; font-weight: normal">July 2018 Multi-Sector Needs Assessment</span><br><span style="font-size: 16px; color: #666; font-weight: normal">Rohingya Refugee Response</span>',
+        style: {
+          fontSize: '30px',
+          color: '#59585a',
+          fontFamily: 'Arial',
+          align: 'center',
+
+        }
       },
+      itemStyle: {
+        fontFamily: 'Arial',
+         color: '#59585a',
+         fontWeight: 'normal'
+     },
       layout: 'vertical',
       itemMarginTop: 0,
       itemMarginBottom: 0,
@@ -47,10 +62,10 @@ $.getJSON('data/campsjoin.geojson', function(geojson) {
       symbolWidth: 24,
       align: 'center',
       verticalAlign: 'bottom',
-      x: 200,
-      y: -75,
+      x: 300,
+      y: -70,
       itemMarginTop: 10,
-      symbolWidth: 10,
+      symbolWidth: 20,
       floating: true,
     },
 
@@ -77,7 +92,7 @@ $.getJSON('data/campsjoin.geojson', function(geojson) {
         },
         tooltip: {
           headerFormat: '',
-          pointFormat: '<div><div>{point.properties.New_Camp_N}: <b>{series.name}</b></div></div>'
+          pointFormat: '<span style="font-size: 16px; color: #59585a; font-weight: bold; float:center">{point.properties.New_Camp_N}: </span> <span style="font-size: 16px; color:{series.color}; font-weight: bold">{series.name}</span>'
         }
       }
     },
@@ -85,6 +100,7 @@ $.getJSON('data/campsjoin.geojson', function(geojson) {
     series: [{
         name: 'Assessed Camp',
         borderColor: '#ffffff',
+        borderWidth: 0.5,
         color: '#0371c0',
         data: ['Camp 10', 'Camp 11', 'Camp 12', 'Camp 14', 'Camp 16', 'Camp 23', 'Camp 5', 'Nayapara RC', 'Camp 13', 'Camp 15', 'Camp 17', 'Camp 18', 'Camp 19', 'Camp 1E', 'Camp 1W', 'Camp 20', 'Camp 21', 'Camp 22', 'Camp 24', 'Camp 25', 'Camp 26', 'Camp 27', 'Camp 2E', 'Camp 2W', 'Camp 3', 'Camp 4', 'Camp 6', 'Camp 7', 'Camp 8E', 'Camp 8W', 'Camp 9'].map(function(code) {
           return {
@@ -194,7 +210,7 @@ $(function() {
         keys: ['New_Camp_N', 'value', 'Upazila', 'UpazilaNum'],
         joinBy: 'New_Camp_N',
         name: 'Camp',
-        borderColor: '#59585a',
+        borderColor: '#000000',
         borderWidth: 0.3,
         nullInteraction: false,
         allowPointSelect: true,
@@ -231,4 +247,8 @@ $(function() {
   });
 
 });
+<<<<<<< HEAD
 })
+=======
+});
+>>>>>>> bgd-msna-dev

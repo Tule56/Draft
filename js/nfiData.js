@@ -7,6 +7,8 @@ $(function() {
 
 $(".dropdown-trigger").dropdown();
 
+"use strict";
+
 var chartNfiCamp;
 var last_camp_name;
 var nfi_item_data;
@@ -64,10 +66,10 @@ $('#chartnfi').highcharts({
      },
 
      title: {
-       text: `<span style="font-size: 22px; font-family:'Arial';  color:#59585a; font-weight: bold; letter-spacing:0em;">Urgently Needed Non-Food Items</span><br><span style="font-size: 22px; font-family:'Arial'; color:#666; font-weight: normal; letter-spacing:0em;">Across All Camps</span>`
+       text: "<span style=\"font-size: 22px; font-family:'Arial';  color:#59585a; font-weight: bold; letter-spacing:0em;\">Urgently Needed Non-Food Items</span><br><span style=\"font-size: 22px; font-family:'Arial'; color:#666; font-weight: normal; letter-spacing:0em;\">Across All Camps</span>"
      },
      subtitle: {
-       text: `<span style="font-size: 12px; color:#59585a; letter-spacing:0em; font-family:'Arial';">% households reporting an urgent need for key non-food items</span>`
+       text: "<span style=\"font-size: 12px; color:#59585a; letter-spacing:0em; font-family:'Arial';\">% households reporting an urgent need for key non-food items</span>"
      },
 
    credits:
@@ -122,10 +124,10 @@ function make_nfi_chart(nfi_data = [], camp_name) {
        },
 
        title: {
-         text: `<span style="font-size: 22px; font-family:'Arial';  color:#59585a; font-weight: bold; letter-spacing:0em;">Urgently Needed Non-Food Items</span><br><span style="font-size: 22px; font-family:'Arial'; color:#0371c0; font-weight: normal; letter-spacing:0em;">${camp_name}</span>`
+         text: "<span style=\"font-size: 22px; font-family:'Arial';  color:#59585a; font-weight: bold; letter-spacing:0em;\">Urgently Needed Non-Food Items</span><br><span style=\"font-size: 22px; font-family:'Arial'; color:#0371c0; font-weight: normal; letter-spacing:0em;\">" + camp_name + "</span>"
        },
        subtitle: {
-         text: `<span style="font-size: 12px; color:#59585a; letter-spacing:0em; font-family:'Arial';">% households reporting an urgent need for key non-food items</span>`
+         text: "<span style=\"font-size: 12px; color:#59585a; letter-spacing:0em; font-family:'Arial';\">% households reporting an urgent need for key non-food items</span>"
        },
       credits: {
         enabled: false
@@ -163,7 +165,7 @@ function make_nfi_chart(nfi_data = [], camp_name) {
       },
       tooltip: {
          formatter: function () {
-             return '<b>'+ Highcharts.numberFormat(Math.abs(this.point.y), 0)+'%</b> of households reporting an urgent<br>need for '  +'<b>'+ this.point.category+ '</b>' + ' in ' + `<span style="color:#0371c0; font-weight: bold; letter-spacing:0em;">${camp_name}</span>`;
+             return '<b>'+ Highcharts.numberFormat(Math.abs(this.point.y), 0)+'%</b> of households reporting an urgent<br>need for '  +'<b>'+ this.point.category+ '</b>' + ' in ' + "<span style=\"color:#0371c0; font-weight: bold; letter-spacing:0em;\">" + camp_name + "</span>";
          }
      },
       series: [{

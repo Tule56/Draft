@@ -7,6 +7,8 @@ $(function() {
 
 $(".dropdown-trigger").dropdown();
 
+"use strict";
+
   var categories_healthseeking = [
       'Traditional healers','Government clinics', 'Private clinics', 'Pharmacies or drug shops in market', 'NGO clinics'];
 

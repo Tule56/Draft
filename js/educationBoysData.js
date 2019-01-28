@@ -6,6 +6,8 @@ $(function() {
 
 $(".dropdown-trigger").dropdown();
 
+"use strict";
+
 var chartEduBoysCamp;
 var last_camp_name;
 var eduboys_ngo_data;
@@ -55,10 +57,10 @@ var data_eduboys_camp = {
       backgroundColor: 'transparent',
     },
         title: {
-          text: `<span style="font-size: 22px; font-family:'Helvetica'; color:#59585a; font-weight: bold;">Boys School Attendance</span><br><span style="font-size: 22px; font-family:'Helvetica'; color:#59585a;font-weight: normal;">Across All Camps </span>`
+          text: "<span style=\"font-size: 22px; font-family:'Helvetica'; color:#59585a; font-weight: bold;\">Boys School Attendance</span><br><span style=\"font-size: 22px; font-family:'Helvetica'; color:#59585a;font-weight: normal;\">Across All Camps </span>"
         },
     subtitle: {
-      text: `<span style="font-size: 12px; color:#59585a; letter-spacing:0em; font-family:'Helvetica';">% boys reported to be attending learning centres in the 7 days prior to data collection, by age group</span>`
+      text: "<span style=\"font-size: 12px; color:#59585a; letter-spacing:0em; font-family:'Helvetica';\">% boys reported to be attending learning centres in the 7 days prior to data collection, by age group</span>"
     },
     credits: {
       enabled: false
@@ -136,10 +138,10 @@ var data_eduboys_camp = {
          },
 
          title: {
-           text: `<span style="font-size: 22px; font-family:'Helvetica'; color:#59585a; font-weight: bold;">Boys School Attendance</span><br><span style="font-size: 22px; font-family:'Helvetica'; color:#0371c0;font-weight: normal;">${camp_name}</span>`
+           text: "<span style=\"font-size: 22px; font-family:'Helvetica'; color:#59585a; font-weight: bold;\">Boys School Attendance</span><br><span style=\"font-size: 22px; font-family:'Helvetica'; color:#0371c0;font-weight: normal;\">" + camp_name + "</span>"
          },
      subtitle: {
-       text: `<span style="font-size: 12px; color:#59585a; letter-spacing:0em; font-family:'Helvetica';">% boys reported to be attending learning centres in the 7 days prior to data collection, by age group</span>`
+       text: "<span style=\"font-size: 12px; color:#59585a; letter-spacing:0em; font-family:'Helvetica';\">% boys reported to be attending learning centres in the 7 days prior to data collection, by age group</span>"
      },
         credits: {
           enabled: false
@@ -194,7 +196,7 @@ var data_eduboys_camp = {
         },
         tooltip: {
           formatter: function() {
-            return + Highcharts.numberFormat(Math.abs(this.point.y), 0) + '% of boys aged '+ this.point.category + ' in '+`<span style="color:#0371c0; font-weight: bold; letter-spacing:0em;">${camp_name}</span>`+ ' reported to attend<br><b>' + this.series.name + '</b> in the 7 days prior to data collection';
+            return + Highcharts.numberFormat(Math.abs(this.point.y), 0) + '% of boys aged '+ this.point.category + ' in '+"<span style=\"color:#0371c0; font-weight: bold; letter-spacing:0em;\">" + camp_name + "</span>"+ ' reported to attend<br><b>' + this.series.name + '</b> in the 7 days prior to data collection';
           }
         },
        series: [{

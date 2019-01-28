@@ -7,6 +7,8 @@ $(function() {
 
 $(".dropdown-trigger").dropdown();
 
+"use strict";
+
   $.getJSON('data/campsjoin.geojson', function(geojson) {
 
     Highcharts.mapChart('container_health', {
@@ -105,7 +107,7 @@ $(".dropdown-trigger").dropdown();
     },
 
     title: {
-      text: `<span style="font-size: 18px; color:#59585a; font-weight: bold"; letter-spacing:0em;>Oral Rehydration Therapy (ORT) Treatment</span><br><span style="font-size: 18px; font-family:'Helvetica'; color:#59585a; font-weight: normal; letter-spacing:0em;">Across All Camps</span>`
+      text: "<span style=\"font-size: 18px; color:#59585a; font-weight: bold\"; letter-spacing:0em;>Oral Rehydration Therapy (ORT) Treatment</span><br><span style=\"font-size: 18px; font-family:'Helvetica'; color:#59585a; font-weight: normal; letter-spacing:0em;\">Across All Camps</span>"
     },
     subtitle: {
       text: '% of children under 5 with diarrhea in 2 weeks prior to survey,<br>by ORT treatment sought'

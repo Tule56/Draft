@@ -9,6 +9,8 @@ $(function() {
 
   $(".dropdown-trigger").dropdown();
 
+  "use strict";
+
   var chartDemCamp;
   var last_camp_name;
   var male_age_data;
