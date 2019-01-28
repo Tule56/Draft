@@ -10,7 +10,6 @@ $(function() {
 
   "use strict";
 
-
 $.getJSON('data/campsjoin.geojson', function(geojson) {
 
   Highcharts.mapChart('container_intro4', {
@@ -245,8 +244,7 @@ $(function() {
   });
 
 });
-<<<<<<< HEAD
+
 })
-=======
+
 });
->>>>>>> bgd-msna-dev
