@@ -8,10 +8,8 @@ $(function() {
 
   $(".dropdown-trigger").dropdown();
 
-<<<<<<< HEAD
-=======
   "use strict";
->>>>>>> bgd-msna-dev
+
 
 $.getJSON('data/campsjoin.geojson', function(geojson) {
 
