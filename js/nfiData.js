@@ -2,6 +2,17 @@ Highcharts.setOptions({
   colors: ['#59585a','#0371c0',  '#95a0a9', '#d2cbb8', '#9fc9e7']
 });
 
+$.ajax({
+    dataType: "json",
+    url: "json.json",
+    mimeType: "application/json",
+    success: function(result){
+        $.each(result, function(i, obj) {
+            $("form").append($('<label for="'+i+'">'+obj.title+'</label>'));
+            $("form").append($('<input id="'+i+'" value="'+obj.value+'" type="text"/><br>'));
+        });
+    }
+});
 
 $(function() {
 
@@ -52,7 +63,7 @@ var data_fuel = [
 ];
 
 var categories_nfi = [
-    'Radios','Blankets', 'Mosquito nets', 'Mens clothes', 'Other Items', 'Womens clothes', 'Childrens clothes', 'Floor mats', 'Umbrellas', 'Portable lamp/torchs', 'Kitchen sets', 'Solar lamps', 'Cooking stoves', 'Fuel'
+    'Radios','Blankets', 'Mosquito nets', 'Mens clothes', 'Other Items', 'Womens clothes', 'Childrens clothes', 'Floor mats', 'Umbrellas', 'Portable torches', 'Kitchen sets', 'Solar lamps', 'Cooking stoves', 'Fuel'
 ];
 
 var categories_nfi2 = [

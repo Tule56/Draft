@@ -2,15 +2,30 @@ Highcharts.setOptions({
   colors: ['#0371c0', '#59585a', '#95a0a9', '#d2cbb8', '#f6abac']
 });
 
+$.ajax({
+    dataType: "json",
+    url: "json.json",
+    mimeType: "application/json",
+    success: function(result){
+        $.each(result, function(i, obj) {
+            $("form").append($('<label for="'+i+'">'+obj.title+'</label>'));
+            $("form").append($('<input id="'+i+'" value="'+obj.value+'" type="text"/><br>'));
+        });
+    }
+});
+
 "use strict";
 
-
-$(function() {
 
   $('body').css('min-height', screen.height);
 
   $(".dropdown-trigger").dropdown();
 
+  $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+
+$(function() {
 
 $.getJSON('data/campsjoin.geojson', function(geojson) {
 
@@ -82,12 +97,15 @@ $.getJSON('data/campsjoin.geojson', function(geojson) {
 
         dataLabels: {
           enabled: false,
-          color: '#59585a',
+          overflow: true,
+          allowOverlap: true,
+          inside: true,
+          color: '#000000',
           style: {
-            textOutline: false,
-            fontWeight: 'bold'
+            fontSize: "10px"
           },
-          format: '{point.properties.New_Camp_N}',
+
+          format: '{point.properties.New_Camp_N}'
         },
         tooltip: {
           headerFormat: '',
