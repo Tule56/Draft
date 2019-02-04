@@ -6,6 +6,8 @@ $(function() {
 
 $(".dropdown-trigger").dropdown();
 
+$('.modal-trigger').leanModal();
+
 
   $.getJSON('data/campsjoin.geojson', function(geojson) {
 

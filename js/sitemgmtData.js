@@ -2,6 +2,7 @@ Highcharts.setOptions({
   colors: ['#59585a', '#0371c0',  '#95a0a9', '#d2cbb8', '#9fc9e7']
 });
 
+$('.modal-trigger').leanModal();
 
 "use strict";
 

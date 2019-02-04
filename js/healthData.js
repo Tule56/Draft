@@ -6,6 +6,7 @@ Highcharts.setOptions({
 $(function() {
 
 $(".dropdown-trigger").dropdown();
+$('.modal-trigger').leanModal();
 
 "use strict";
 

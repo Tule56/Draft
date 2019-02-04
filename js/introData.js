@@ -5,15 +5,12 @@ Highcharts.setOptions({
 "use strict";
 
 
+$(function() {
+
   $('body').css('min-height', screen.height);
 
   $(".dropdown-trigger").dropdown();
 
-  $(document).ready(function(){
-    $('.collapsible').collapsible();
-  });
-
-$(function() {
 
 $.getJSON('data/campsjoin.geojson', function(geojson) {
 

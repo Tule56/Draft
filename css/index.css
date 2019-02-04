@@ -25,7 +25,7 @@ body {
 
   }
 
-  #main {
+  main {
     flex: 1 0 auto;
     width:100%;
     height: 100%;
@@ -37,9 +37,19 @@ body {
    position:fixed;
    left:0px;
    bottom:0px;
-   min-height:100px;
+   min-height:60px;
    width:100%;
    z-index:999;
+}
+
+#modal1 {
+  z-index: 99999;
+  color: #59585a
+  background-color:white;
+  font-family: 'Arial';
+  text-align: justify;
+
+
 }
 
 #container_intro {
@@ -87,6 +97,7 @@ body {
   font-style: bold;
   font-size: 5em;
   letter-spacing: 0em;
+  margin-bottom: 1em;
 }
 
 .highcharts-tooltip {
@@ -147,10 +158,10 @@ dropdown-trigger{
   z-index:99999;
 }
 
-#chartDemAll, #chartDemCamp, #chartrisksboys, #chartRiskBoysCamp, #chartrisksgirls, #chartRiskGirlsCamp, #charthealth, #charthealthseeking, #chartEduBoys, #chartEduBoysCamp, #chartEduGirls, #chartEduGirlsCamp, #chartnfi, #chartNfiCamp, #chartshelter, #chartExpenCamp, #chartlivli3 {
+#chartrisksboys, #chartRiskBoysCamp, #chartrisksgirls, #chartRiskGirlsCamp, #charthealth, #charthealthseeking, #chartEduBoys, #chartEduBoysCamp, #chartEduGirls, #chartEduGirlsCamp, #chartnfi, #chartNfiCamp, #chartshelter, #chartExpenCamp, #chartlivli3 {
   height: 320px;
   width: 350px;
-  margin-top: 1em;
+  margin-top: 1.5em;
   margin-left: 0em;
   background: transparent;
   z-index: 99999;
@@ -175,7 +186,7 @@ dropdown-trigger{
 #chartsm1, #chartsm2, #chartSMCamp, #chartcomms, #chartlivli, #chartlivli2 {
   height: 250px;
   width: 350px;
-  margin-top: 1em;
+  margin-top: 1.5em;
   margin-left: 0em;
   background: transparent;
   z-index: 99999;
@@ -201,7 +212,7 @@ dropdown-trigger{
 #chartfoodsec, #chartfoodsec2, #chartfoodsec3, #charthealth2, #chartcomms3 {
   height: 200px;
   width: 325px;
-  margin-top: 1em;
+  margin-top: 1.5em;
   margin-left: 0em;
   background: transparent;
   z-index: 99999;
@@ -301,4 +312,8 @@ background: linear-gradient(to right,#424242,#727272) fixed;}
 .brand-logo {
 background: linear-gradient(to right,#424242,#727272) fixed;}
 .page-footer{
+background: linear-gradient(to right,#424242,#727272) fixed;}
+.footer-copyright{
+background: linear-gradient(to right,#424242,#727272) fixed;}
+.modal-footer{
 background: linear-gradient(to right,#424242,#727272) fixed;}

@@ -8,6 +8,8 @@ Highcharts.setOptions({
 $(function() {
 
   $(".dropdown-trigger").dropdown();
+  $('.modal-trigger').leanModal();
+
 
   var chartProCamp;
   var last_camp_name;

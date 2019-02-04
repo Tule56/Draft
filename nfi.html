@@ -9,7 +9,7 @@
 
   <link rel="stylesheet" href="css/index.css" />
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -22,7 +22,7 @@
   <script src="https://code.highcharts.com/maps/modules/data.js"></script>
   <script src="https://code.highcharts.com/modules/exporting.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
 
   <script src="js/nfiData.js"> </script>
   <script src="js/introData.js"> </script>
@@ -38,7 +38,7 @@
 <header>
   <nav class="nav-extended hide-on-med-and-down" style="height: 54px;line-height: 54px; background-color:#9fc9e7;">
     <div class="nav-wrapper " style="height: 50px;line-height: 50px;z-index: 9999;position:fixed;  width:100%;outline: 4px solid; outline-color:#9fc9e7;">
-      <i href="#!" class="brand-logo "><img src="img/msna.png" style="width:367px;height:40px;margin-left: 0.9em;margin-top:0.22em; position:fixed; z-index: 100;" /></i>
+      <i href="#!" class="brand-logo "><img src="img/msna.png" style="width:321px;height:35px;margin-left: 0.9em;margin-top:0.22em; position:fixed; z-index: 100;" /></i>
 
       <ul class="nav-content grey darken-3" style="height: 50px;line-height: 50px;background-color:#59585a; position:fixed;  width:100%;">
         <div class="row">
@@ -376,43 +376,42 @@
 </div>
 
 
-<footer class="page-footer right grey darken-3 " style="margin-top: -5em; outline: 4px solid; outline-color:#9fc9e7; padding-bottom:-4em">
-  <div class="row">
-    <div class="col s2">
-      <img src="img/unhcr.png" style="width:160px;height:50px;z-index: 99999;margin-top: 0em;margin-right: 0em;" />
-    </div>
-    <div class="col s0 m0 l1">
-      <h5 class="white-text hide-on-med-and-down">Disclaimer:</h5>
-    </div>
-    <div class="col s3">
-      <div class="white-text hide-on-small-and-down" style="font-family:'Arial';font-size:8px;margin-top: -1em; text-align: justify;">The content of this web-platform are based on summary findings of Multi-Sector Needs Assessment (MSNA) conducted by
+  <div id="modal1" class="modal">
+    <div class="modal-content" style="background-color:#fff">
+      <h4 style="color:#0371c0;">Disclaimer</h4>
+      <p> The content of this web-platform are based on summary findings of Multi-Sector Needs Assessment (MSNA) conducted by
         REACH
         with
         funding support from UNHCR in July 2018 in Rohingya Refugee Camps and Settlements in Cox’s Bazar, Bangladesh. The purpose of the MSNA was to a) provide a comprehensive evidence based of Multi-Sectoral Needs and Assessment results among
-        population in refugee settlement areas and b) provide pre-monsoon baseline needs information in support of operational relevance to the Rohingya Refugee response during 2018.
-      </div>
-    </div>
-
-    <div class="col s3">
-      <div class="white-text hide-on-small-and-down" style="font-family:'Arial';font-size:8px;margin-top: -1em; text-align: justify;">These findings are made available to the humanitarian community and general public as a support tool for the
+        population in refugee settlement areas and b) provide pre-monsoon baseline needs information in support of operational relevance to the Rohingya Refugee response during 2018.</p>
+      <p> These findings are made available to the humanitarian community and general public as a support tool for the
         humanitarian
         emergency response in Bangladesh and other related purposes only. Extracts of the information from this tool may be reviewed, reproduced or translated for the above-mentioned purposes, but not for sale or for use in conjunction with
-        commercial purposes. UNHCR does not make any warranties or representations as to the accuracy or completeness of any materials in this analysis.
-
-      </div>
-    </div>
-
-    <div class="col s3">
-      <div class="white-text hide-on-small-and-down" style="font-family:'Arial';font-size:8px;margin-top: -1em; text-align: justify;">Under no circumstances shall UNHCR be liable for any loss, damage, liability or expense incurred or suffered that
+        commercial purposes. UNHCR does not make any warranties or representations as to the accuracy or completeness of any materials in this analysis.</p>
+      <p> Under no circumstances shall UNHCR be liable for any loss, damage, liability or expense incurred or suffered that
         is claimed
         to have resulted from the use of this tool, including, without limitation, any fault, error, omission, interruption or delay with respect thereto. As a user of this product, you acknowledge that any information or material you share with
         the
-        public from these findings are treated as being non-proprietary and non-confidential. The author/producer requires that any use of information from this product shall be accompanied by an acknowledgement of the source of the information.
-      </div>
+        public from these findings are treated as being non-proprietary and non-confidential. The author/producer requires that any use of information from this product shall be accompanied by an acknowledgement of the source of the information.</p>
     </div>
-
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect btn blue darken-2 z-depth-2" style="color:white">OK</a>
+    </div>
   </div>
-</footer>
+
+  <footer class="footer-copyright right" style="height:50px;margin-top: -5em; outline: 4px solid; outline-color:#9fc9e7; padding-bottom:0em">
+    <div class="row">
+      <div class="col s6">
+        <img src="img/unhcr.png" style="width:155px;height:50px;z-index: 99999;margin-top: 2.5px;margin-right: 0em; display: block;" />
+      </div>
+      <div class="col s6">
+        <a class="waves-effect waves-light btn modal-trigger grey darken-3" href="#modal1" style="margin-top:0.8em;float:right; ">DISCLAIMER</a>
+
+
+      </div>
+
+    </div>
+  </footer>
 
 </body>
 </html>

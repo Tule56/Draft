@@ -6,6 +6,8 @@ Highcharts.setOptions({
 
 $(".dropdown-trigger").dropdown();
 
+  $('.modal-trigger').leanModal();
+
 $(function() {
 
 
