@@ -2,17 +2,6 @@ Highcharts.setOptions({
   colors: ['#0371c0', '#59585a', '#95a0a9', '#d2cbb8', '#f6abac']
 });
 
-$.ajax({
-    dataType: "json",
-    url: "json.json",
-    mimeType: "application/json",
-    success: function(result){
-        $.each(result, function(i, obj) {
-            $("form").append($('<label for="'+i+'">'+obj.title+'</label>'));
-            $("form").append($('<input id="'+i+'" value="'+obj.value+'" type="text"/><br>'));
-        });
-    }
-});
 
 $(function() {
 
