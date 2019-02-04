@@ -236,13 +236,15 @@ dropdown-trigger{
 
 }
 
-.active {
-  background-color: #0371c0;
-  color: white;
+.tabs .active {
+  background: linear-gradient(to right,#0371c0,#479ddb) fixed;
   border-right: 1.8px solid #FAEB00;
   border-left: 1.8px solid #FAEB00;
 
 }
+
+.a:hover {
+color:#9fc9e7}
 
 
 #tab {
@@ -259,7 +261,7 @@ dropdown-trigger{
 }
 
 .tabs .tab a:hover {
-	color: #81c3f2;}
+	color: #fff;}
 
 
 
@@ -273,8 +275,30 @@ dropdown-trigger{
   coverTrigger: false;
   height: 350px;
 }
+.active {
+  background-color: #0371c0;
+  border-right: 1.8px solid #FAEB00;
+  border-left: 1.8px solid #FAEB00;
 
-.dropdown-trigger {}
+}
+
+.dropdown-trigger {
+
+}
 
   a:hover {
 color:#9fc9e7}
+
+.nav-wrapper {
+background: linear-gradient(to right,#424242,#727272) fixed;}
+.nav-extended {
+background: linear-gradient(to right,#424242,#727272) fixed;}
+.nav-content {
+background: linear-gradient(to right,#424242,#727272) fixed;}
+
+.tabs {
+background: linear-gradient(to right,#424242,#727272) fixed;}
+.brand-logo {
+background: linear-gradient(to right,#424242,#727272) fixed;}
+.page-footer{
+background: linear-gradient(to right,#424242,#727272) fixed;}

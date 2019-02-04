@@ -24,10 +24,10 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
 
+  <script src="js/healthData.js"> </script>
   <script src="js/introData.js"> </script>
   <script src="js/nfiData.js"> </script>
   <script src="js/proData.js"> </script>
-  <script src="js/healthData.js"> </script>
   <script src="js/educationData.js"> </script>
   <script src="js/foodsecData.js"> </script>
   <script src="js/sitemgmtData.js"> </script>
@@ -88,8 +88,6 @@
     </div>
   </nav>
 
-
-
 </header>
 
 <div class="image hide-on-med-and-down">
@@ -100,6 +98,36 @@
   <img src="img/scale.png" style="width:225px;height:150px;z-index: -100;margin-top: 40em;margin-left: 21em;position:absolute" />
 </div>
 <div class="main">
+
+
+    <div id="health">
+      <div class="row">
+        <div class="col s12 m4 l3">
+          <h4 id="title" style="font-family:'Helvetica';font-size:30px;color:#59585a;margin-left: 0.6em;margin-top: 0.4em;z-index: 99999;"><span class="icon-cluster_health" style="font-size:30px;color:#59585a;"></span> <b>HEALTH</b></h4>
+          <div id="textbox" class="z-depth-1">Seventy-nine percent (79%) of households with children under 5 reported all of these children having an immunization card. Sixteen percent
+            (16%) of households with children under 5 reported at least one child ill with diarrhoea the two weeks prior to data collection, and the majority of these ill children were treated with ORT, either from a health care provider (boys: 88%;
+            girls: 93%) or through treatment at home (boys: 10%; girls: 7%).
+
+          </div>
+
+          <a class='dropdown-trigger btn blue darken-2 z-depth-2' style="margin-left: 1.4em;margin-top: 1em;position: absolute; z-index: 1;" href='#' data-activates='dropdown3'><span style="font-family:'Helvetica'; font-weight: bold;"><i class="material-icons"
+                style="font-size:12px; color:#FAEB00;">subdirectory_arrow_right </i> CHILDREN UNDER 5</span></a>
+
+          <ul id='dropdown3' class='dropdown-content white' options="constrainWidth:true;">
+            <li><a class="active"><span style="font-family:'Helvetica'; color:#ffffff; font-size:14px; font-weight: bold;">CHILDREN UNDER 5</span></a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="healthseeking.html"><span style="font-family:'Helvetica'; color:#59585a; font-size:14px; font-weight: bold;">HEALTH SEEKING BEHAVIOUR</span></a></li>
+          </ul>
+        </div>
+        <div class="col s12 m4 l7" id="container_health"></div>
+
+
+        <div class="col s12 m4 l2">
+          <div id="charthealth"></div>
+          <div id="charthealth2"></div>
+        </div>
+      </div>
+    </div>
 
 
   <div id="index" class="row">
@@ -187,7 +215,7 @@
           perception compared to females, reporting “no area unsafe” at higher rates for both men, women, boys, and girls. </div>
         <span style="margin-left: 2em;font-size: 12px;color: #59585a;font-family:'Arial';"> <b>*Click on camp for camp specific data</b></span>
 
-        <br><a class='dropdown-trigger btn blue darken-2 z-depth-2' style="margin-left: 1.4em;margin-top: 0.4em;z-index: 9999;position:relative;" href='#' data-activates='dropdown2'><span style="font-family:'Helvetica'; font-weight: bold;"><i class="material-icons pulse"
+        <br><a class='dropdown-trigger btn blue darken-2 z-depth-2' style="margin-left: 1.4em;margin-top: 0.4em;z-index: 1;position:relative;" href='#' data-activates='dropdown2'><span style="font-family:'Helvetica'; font-weight: bold;"><i class="material-icons pulse"
               style="font-size:14px; color:#FAEB00;">subdirectory_arrow_right </i> UNSAFE AREAS</span></a>
 
         <ul id='dropdown2' class='dropdown-content white'>
@@ -210,37 +238,6 @@
     </div>
 
   </div>
-
-
-  <div id="health">
-    <div class="row">
-      <div class="col s12 m4 l3">
-        <h4 id="title" style="font-family:'Helvetica';font-size:30px;color:#59585a;margin-left: 0.6em;margin-top: 0.4em;z-index: 99999;"><span class="icon-cluster_health" style="font-size:30px;color:#59585a;"></span> <b>HEALTH</b></h4>
-        <div id="textbox" class="z-depth-1">Seventy-nine percent (79%) of households with children under 5 reported all of these children having an immunization card. Sixteen percent
-          (16%) of households with children under 5 reported at least one child ill with diarrhoea the two weeks prior to data collection, and the majority of these ill children were treated with ORT, either from a health care provider (boys: 88%;
-          girls: 93%) or through treatment at home (boys: 10%; girls: 7%).
-
-        </div>
-
-        <a class='dropdown-trigger btn blue darken-2 z-depth-2' style="margin-left: 1.4em;margin-top: 1em;position: absolute; z-index: 1;" href='#' data-activates='dropdown3'><span style="font-family:'Helvetica'; font-weight: bold;"><i class="material-icons"
-              style="font-size:12px; color:#FAEB00;">subdirectory_arrow_right </i> CHILDREN UNDER 5</span></a>
-
-        <ul id='dropdown3' class='dropdown-content white' options="constrainWidth:true;">
-          <li><a class="active"><span style="font-family:'Helvetica'; color:#ffffff; font-size:14px; font-weight: bold;">CHILDREN UNDER 5</span></a></li>
-          <li class="divider" tabindex="-1"></li>
-          <li><a href="healthseeking.html"><span style="font-family:'Helvetica'; color:#59585a; font-size:14px; font-weight: bold;">HEALTH SEEKING BEHAVIOUR</span></a></li>
-        </ul>
-      </div>
-      <div class="col s12 m4 l7" id="container_health"></div>
-
-
-      <div class="col s12 m4 l2">
-        <div id="charthealth"></div>
-        <div id="charthealth2"></div>
-      </div>
-    </div>
-  </div>
-
 
   <div id="education">
     <div class="row">
