@@ -39,7 +39,7 @@ $('.modal-trigger').leanModal();
         title: {
           text: 'Diarrhea in Children Under 5<br></br><span style="font-size: 16px; color: #59585a; font-weight: normal; line-height: 1.6;">% households with children under 5 reporting at least</span><br><span style="font-size: 16px; color: #59585a; font-weight: normal; line-height: 1.6;">one child under 5 with diarrhea in the 2 weeks prior to data collection</span>',
           style: {
-                fontSize: '30px', color:'#59585a', fontFamily: 'Arial', align:'center',
+                fontSize: '30px', color:'#59585a', fontFamily: 'Arial', align:'center'
             }},
             align: 'center',
             verticalAlign: 'bottom',
@@ -111,7 +111,7 @@ $('.modal-trigger').leanModal();
       text: "<span style=\"font-size: 18px; color:#59585a; font-weight: bold\"; letter-spacing:0em;>Oral Rehydration Therapy (ORT) Treatment</span><br><span style=\"font-size: 18px; font-family:'Helvetica'; color:#59585a; font-weight: normal; letter-spacing:0em;\">Across All Camps</span>"
     },
     subtitle: {
-      text: '% of children under 5 with diarrhea in 2 weeks prior to survey,<br>by ORT treatment sought'
+      text: '% of children under 5 with diarrhea in 2 weeks prior to survey, by ORT treatment sought'
     },
     credits: {
       enabled: false

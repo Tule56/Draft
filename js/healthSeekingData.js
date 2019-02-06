@@ -40,7 +40,7 @@ $('.modal-trigger').leanModal();
 
       legend: {
         title: {
-          text: 'Health Seeking Behaviour<br></br><span style="font-size: 16px; color: #59585a; font-weight: normal; line-height: 1.6;">% of individuals reported to have had an illness serious enough</span><br><span style="font-size: 16px; color: #59585a; font-weight: normal; line-height: 1.6;">to require medical treatment in the 30 days prior to data collection,</span><br><span style="font-size: 16px; color: #59585a; font-weight: normal; line-height: 1.6;">for whom treatment was sought at an NGO-run clinic</span>',
+          text: 'Health Seeking Behaviour<br></br><span style="font-size: 16px; color: #59585a; font-weight: normal; line-height: 2;">% of individuals reported to have had an illness serious enough</span><br><span style="font-size: 16px; color: #59585a; font-weight: normal; line-height: 1.6;">to require medical treatment in the 30 days prior to data collection,</span><br><span style="font-size: 16px; color: #59585a; font-weight: normal; line-height: 1.6;">for whom treatment was sought at an</span> <span style="font-size: 16px; color: #59585a; font-weight: bold; line-height: 2;"> NGO-run clinic</span>',
           style: {
             fontSize: '30px',
             color: '#59585a',
@@ -145,7 +145,7 @@ $('.modal-trigger').leanModal();
 
       tooltip: {
          formatter: function () {
-             return '<b>'+ Highcharts.numberFormat(Math.abs(this.point.y), 0)+'%</b> of individuals reported to have had an illness serious enough<br>to require medical treatment in the 30 days prior to data collection,<br>sought treatment at ' +'<b>'+ this.point.category+ '</b>'
+             return '<b>'+ Highcharts.numberFormat(Math.abs(this.point.y), 0)+'%</b> of individuals reported to have had an illness serious<br>enough to require medical treatment in the 30 days prior<br>to data collection, sought treatment at ' +'<b>'+ this.point.category+ '</b>'
                  ;
          }
      },

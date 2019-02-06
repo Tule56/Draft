@@ -99,7 +99,7 @@ $('#chartlivli3').highcharts({
 
      tooltip: {
         formatter: function () {
-            return '<b>'+Highcharts.numberFormat(Math.abs(this.point.y), 0)+' BDT</b>: Median reported household expenditure for '  +'<b>'+ this.point.category+ '</b>'
+            return '<b>'+Highcharts.numberFormat(Math.abs(this.point.y), 0)+' BDT</b>: Median reported<br>household expenditure for '  +'<b>'+ this.point.category+ '</b>'
                 ;
         }
     },
@@ -238,7 +238,7 @@ $('#chartlivli3').highcharts({
         },
         align: 'center',
         verticalAlign: 'bottom',
-			x:300,
+			x:285,
 			y:-50,
 			itemMarginTop: 10,
 			symbolWidth: 250,

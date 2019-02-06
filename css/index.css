@@ -95,9 +95,8 @@ body {
 .highcharts-legend-title {
   fill: #59585a;
   font-style: bold;
-  font-size: 5em;
   letter-spacing: 0em;
-  margin-bottom: 1em;
+  line-height: 18px;
 }
 
 .highcharts-tooltip {
@@ -158,11 +157,36 @@ dropdown-trigger{
   z-index:99999;
 }
 
-#chartrisksboys, #chartRiskBoysCamp, #chartrisksgirls, #chartRiskGirlsCamp, #charthealth, #charthealthseeking, #chartEduBoys, #chartEduBoysCamp, #chartEduGirls, #chartEduGirlsCamp, #chartnfi, #chartNfiCamp, #chartshelter, #chartExpenCamp, #chartlivli3 {
+#chartrisksboys, #chartRiskBoysCamp, #chartrisksgirls, #chartRiskGirlsCamp, #charthealth,  #chartEduBoys, #chartEduBoysCamp, #chartEduGirls, #chartEduGirlsCamp, #chartnfi, #chartNfiCamp, #chartshelter, #chartExpenCamp, #chartlivli3 {
   height: 320px;
   width: 350px;
   margin-top: 1.5em;
   margin-left: 0em;
+  background: transparent;
+  z-index: 99999;
+}
+
+.highcharts-title {
+  fill: #434348;
+  font-weight: bold;
+  font-family: 'Arial';
+  color: #59585a;
+  font-size: 12px;
+  letter-spacing: 0em;
+}
+
+.highcharts-legend-title {
+  font-family: 'Arial';
+  color: #acacad;
+  letter-spacing: 0em;
+  font-size: 10px;
+}
+
+#charthealthseeking{
+  height: 300px;
+  width: 375px;
+  margin-top: 1.5em;
+  margin-left: -3em;
   background: transparent;
   z-index: 99999;
 }
@@ -238,7 +262,6 @@ dropdown-trigger{
 #tabs {
   border-right: 1.6px solid #ffff;
   border-left: 1.6px solid #ffff;
-  z-index: 9999;
 }
 
 .li {

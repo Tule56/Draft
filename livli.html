@@ -12,8 +12,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
   <script src="https://code.highcharts.com/stock/highstock.js"></script>
@@ -36,23 +34,23 @@
 </head>
 <body>
 <header>
-  <nav class="nav-extended hide-on-med-and-down" style="height: 54px;line-height: 54px; background-color:#9fc9e7;">
-    <div class="nav-wrapper " style="height: 50px;line-height: 50px;z-index: 9999;position:fixed;  width:100%;outline: 4px solid; outline-color:#9fc9e7;">
+  <nav class="nav-extended hide-on-med-and-down" style="height: 55px;line-height: 55px; background-color:#9fc9e7;">
+    <div class="nav-wrapper z-depth-1" style="height: 55px;line-height: 55px;z-index: 9999;position:fixed;  width:100%;">
       <i href="#!" class="brand-logo "><img src="img/msna.png" style="width:321px;height:35px;margin-left: 0.9em;margin-top:0.22em; position:fixed; z-index: 100;" /></i>
 
-      <ul class="nav-content grey darken-3" style="height: 50px;line-height: 50px;background-color:#59585a; position:fixed;  width:100%;">
+      <ul class="nav-content" style="height: 55px;line-height: 55px;background-color:#59585a; position:fixed;  width:100%;">
         <div class="row">
           <div class="col s9 offset-s3">
-            <ul class="tabs tabs-fixed-width grey darken-3" style="height: 50px;line-height: 50px;background-color:#59585a">
-              <li class="tab"><a class="waves-effect" href="#index" style="color:#ffffff;"><span class="icon-people_affected_population" style="font-size:15px;"></span> Introduction</a></li>
-              <li class="tab"><a href="#protection" class="waves-effect" style="color:#ffffff;"><span class="icon-cluster_protection" style="font-size:15px;"></span> Protection</a></li>
-              <li class="tab"><a href="#health" class="waves-effect" style="color:#ffffff;"><span class="icon-cluster_health" style="font-size:15px;"></span> Health</a></li>
-              <li class="tab"><a href="#education" class="waves-effect" style="color:#ffffff;"><span class="icon-cluster_education" style="font-size:15px;color:#ffffff;"></span> Education</a></li>
-              <li class="tab"><a href="#foodsec" class="waves-effect" style="color:#ffffff;"><span class="icon-cluster_food_security" style="font-size:15px;"></span> Food Security</a></li>
-              <li class="tab"><a href="#nfi" class="waves-effect" style="color:#ffffff;"><span class="icon-cluster_shelter" style="font-size:15px;"></span> Shelter/NFI</a></li>
-              <li class="tab"><a href="#sitemgmt" class="waves-effect" style="color:#ffffff;"><span class="icon-cluster_CCCM" style="font-size:15px;"></span> Site Mgmt</a></li>
-              <li class="tab"><a href="#comms" class="waves-effect" style="color:#ffffff;"><span class="icon-cluster_emergency_telecommunications" style="font-size:15px;"></span> Communication</a></li>
-              <li class="tab"><a href="#livli" class="active waves-effect" style="color:#ffffff;"><span class="icon-socioeconomic_livelihood" style="font-size:15px;"></span> Livelihoods</a></li>
+            <ul class="tabs tabs-fixed-width" style="height: 55px;line-height: 55px;background-color:#59585a">
+              <li class="tab" style="height: 55px;line-height: 55px;"><a class="waves-effect" href="#index" style="color:#ffffff;"><span class="icon-people_affected_population" style="font-size:15px;"></span> Introduction</a></li>
+              <li class="tab" style="height: 55px;line-height: 55px;"><a href="#protection" class="waves-effect" style="color:#ffffff;"><span class="icon-cluster_protection" style="font-size:15px;"></span> Protection</a></li>
+              <li class="tab" style="height: 55px;line-height: 55px;"><a href="#health" class="waves-effect" style="color:#ffffff;"><span class="icon-cluster_health" style="font-size:15px;"></span> Health</a></li>
+              <li class="tab" style="height: 55px;line-height: 55px;"><a href="#education" class="waves-effect" style="color:#ffffff;"><span class="icon-cluster_education" style="font-size:15px;color:#ffffff;"></span> Education</a></li>
+              <li class="tab" style="height: 55px;line-height: 55px;"><a href="#foodsec" class="waves-effect" style="color:#ffffff;"><span class="icon-cluster_food_security" style="font-size:15px;"></span> Food Security</a></li>
+              <li class="tab" style="height: 55px;line-height: 55px;"><a href="#nfi" class="waves-effect" style="color:#ffffff;"><span class="icon-cluster_shelter" style="font-size:15px;"></span> Shelter/NFI</a></li>
+              <li class="tab" style="height: 55px;line-height: 55px;"><a href="#sitemgmt" class="waves-effect" style="color:#ffffff;"><span class="icon-cluster_CCCM" style="font-size:15px;"></span> Site Mgmt</a></li>
+              <li class="tab" style="height: 55px;line-height: 55px;"><a href="#comms" class="waves-effect" style="color:#ffffff;"><span class="icon-cluster_emergency_telecommunications" style="font-size:15px;"></span> Communication</a></li>
+              <li class="tab" style="height: 55px;line-height: 55px;"><a href="#livli" class="active waves-effect" style="color:#ffffff;"><span class="icon-socioeconomic_livelihood" style="font-size:15px;"></span> Livelihoods</a></li>
               <div class="indicator yellow lighten-1" style="z-index:1;"></div>
 
             </ul>
@@ -104,7 +102,7 @@
   <div id="livli">
     <div class="row">
       <div class="col s12 m4 l3">
-        <h4 id="title" style="font-family:'Helvetica';font-size:30px;color:#59585a;margin-left: 0.6em;margin-top: 0.4em;z-index: 99999;"><span class="icon-socioeconomic_livelihood" style="font-size:30px;color:#59585a;"></span> <b>LIVELIHOODS</b></h4>
+        <h4 id="title" style="font-family:'Helvetica';font-size:30px;color:#59585a;margin-left: 0.6em;margin-top: 0.7em;z-index: 99999;"><span class="icon-socioeconomic_livelihood" style="font-size:30px;color:#59585a;"></span> <b>LIVELIHOODS</b></h4>
         <div id="textbox" class="z-depth-1">Thirty-five percent (35%) of households reported taking on new debts in the 30 days prior to data collection, while three quarters of households reported taking on new debts since arriving in Bangladesh. The median
           household
           debt was 4,033 Bangladeshi Taka (BDT). In the 30 days prior to data collection, households reported a median expenditure of 11,421 BDT on goods and services, with the largest 3 expenses on food, clothing, and fuel.
@@ -138,7 +136,7 @@
 
   <div id="index" class="row">
     <div class="col s12 m4 l3">
-      <h4 id="title" style="font-family:'Helvetica';font-size:30px;color:#59585a;margin-left: 0.6em;margin-top: 0.4em;z-index: 99999;"><span class="icon-people_affected_population" style="font-size:30px;color:#59585a;"></span> <b>INTRODUCTION</b></h4>
+      <h4 id="title" style="font-family:'Helvetica';font-size:30px;color:#59585a;margin-left: 0.6em;margin-top: 0.7em;z-index: 99999;"><span class="icon-people_affected_population" style="font-size:30px;color:#59585a;"></span> <b>INTRODUCTION</b></h4>
       <div id="textbox" class="z-depth-1"><span style="font-size:12px;font-family:'Arial';z-index: 99999">
           An estimated 723,000 Rohingya refugees have fled violence in Myanmar’s
           Rakhine state since August 25, 2017. Most of the refugees rely on
@@ -177,7 +175,7 @@
   <div id="nfi">
     <div class="row">
       <div class="col s12 m4 l3">
-        <h4 id="title" style="font-family:'Helvetica';font-size:30px;color:#59585a;margin-left: 0.6em;margin-top: 0.4em;z-index: 99999;"><span class="icon-cluster_shelter" style="font-size:30px;color:#59585a;"></span> <b>SHELTER & NON-FOOD ITEMS</b></h4>
+        <h4 id="title" style="font-family:'Helvetica';font-size:30px;color:#59585a;margin-left: 0.6em;margin-top: 0.7em;z-index: 99999;"><span class="icon-cluster_shelter" style="font-size:30px;color:#59585a;"></span> <b>SHELTER & NON-FOOD ITEMS</b></h4>
         <div id="textbox" class="z-depth-1">With the monsoon ongoing at the time of assessment, <b>one fifth (19%) of all households surveyed reported damage or destruction of their shelter in the 30 days prior to data collection,</b> largely in the
           Kutupalong-Balukhali Extension site. <p>Reported access to fuel distributions varied substantially by camp. <b>On average, 52% of households reported receiving cooking fuel in the 30 days prior to data collection.</b> However, in nine
             camps, 90% of households or more reported receiving fuel, yet in nine different camps, less than 10% of surveyed households reported receiving fuel. The most commonly reported urgent NFI needs across all camps were fuel (75%), cooking
@@ -212,7 +210,7 @@
     <div class="row">
 
       <div class="col s12 m4 l3">
-        <h4 id="title" style="font-family:'Helvetica';font-size:30px;color:#59585a;margin-left: 0.6em;margin-top: 0.4em;z-index: 99999;"><span class="icon-cluster_protection" style="font-size:30px;color:#59585a;"></span> <b>PROTECTION</b></h4>
+        <h4 id="title" style="font-family:'Helvetica';font-size:30px;color:#59585a;margin-left: 0.6em;margin-top: 0.7em;z-index: 99999;"><span class="icon-cluster_protection" style="font-size:30px;color:#59585a;"></span> <b>PROTECTION</b></h4>
         <div id="textbox" class="z-depth-1"><b>The majority of households (82%) do not believe there is enough light at night for them to access latrines safely.</b> In order to assess perceptions of security, respondents were asked to identify areas of the camp
           where
           men, women, girls, and boys would feel unsafe*. “No areas unsafe” and latrines appear in the top three most common responses across all camps for all ages and genders. “No area unsafe” was the most frequent response for men, women, and
@@ -249,7 +247,7 @@
   <div id="health">
     <div class="row">
       <div class="col s12 m4 l3">
-        <h4 id="title" style="font-family:'Helvetica';font-size:30px;color:#59585a;margin-left: 0.6em;margin-top: 0.4em;z-index: 99999;"><span class="icon-cluster_health" style="font-size:30px;color:#59585a;"></span> <b>HEALTH</b></h4>
+        <h4 id="title" style="font-family:'Helvetica';font-size:30px;color:#59585a;margin-left: 0.6em;margin-top: 0.7em;z-index: 99999;"><span class="icon-cluster_health" style="font-size:30px;color:#59585a;"></span> <b>HEALTH</b></h4>
         <div id="textbox" class="z-depth-1">Seventy-nine percent (79%) of households with children under 5 reported all of these children having an immunization card. Sixteen percent
           (16%) of households with children under 5 reported at least one child ill with diarrhoea the two weeks prior to data collection, and the majority of these ill children were treated with ORT, either from a health care provider (boys: 88%;
           girls: 93%) or through treatment at home (boys: 10%; girls: 7%).
@@ -279,7 +277,7 @@
   <div id="education">
     <div class="row">
       <div class="col s12 m4 l3">
-        <h4 id="title" style="font-family:'Helvetica';font-size:30px;color:#59585a;margin-left: 0.6em;margin-top: 0.4em;z-index: 99999;"><span class="icon-cluster_education" style="font-size:30px;color:#59585a;"></span><b> EDUCATION</b></h4>
+        <h4 id="title" style="font-family:'Helvetica';font-size:30px;color:#59585a;margin-left: 0.6em;margin-top: 0.7em;z-index: 99999;"><span class="icon-cluster_education" style="font-size:30px;color:#59585a;"></span><b> EDUCATION</b></h4>
         <div id="textbox" class="z-depth-1"><b>Almost two thirds of children aged 6-14 were reported as attending an NGO-run learning centre in the seven days prior to data collection (boys: 61%, girls: 60%).</b> Numbers were lower for younger children, with 38% of
           both boys and girls aged 3-5 were reported as attending NGO centres. For children aged 15-17, only 6% of boys and 1% of girls aged 15-17 reported as attending. The majority of children reportedly attending NGO learning centres in the 7
           days prior to data collection were also reported as attending religious learning centres in that time.
@@ -309,7 +307,7 @@
   <div id="foodsec">
     <div class="row">
       <div class="col s12 m4 l3">
-        <h4 id="title" style="font-family:'Helvetica';font-size:30px;color:#59585a;margin-left: 0.6em;margin-top: 0.4em;z-index: 99999;"><span class="icon-cluster_food_security" style="font-size:30px;color:#59585a;"></span><b> FOOD SECURITY</b></h4>
+        <h4 id="title" style="font-family:'Helvetica';font-size:30px;color:#59585a;margin-left: 0.6em;margin-top: 0.7em;z-index: 99999;"><span class="icon-cluster_food_security" style="font-size:30px;color:#59585a;"></span><b> FOOD SECURITY</b></h4>
         <div id="textbox" class="z-depth-1">The majority (97%) of households reported access to a local market where they could buy food. One third (35%) of all households reported living between five and 15 minutes away from a market by foot, and another third
           (32%)
           reported living 15 – 30 minutes walking from a market. One quarter (25%) of all households reported living more than 30 minutes’ walk from a food market. This was most frequently reported in camps furthest from the main road, in the west
@@ -336,7 +334,7 @@
   <div id="sitemgmt">
     <div class="row">
       <div class="col s12 m4 l3">
-        <h4 id="title" style="font-family:'Helvetica';font-size:30px;color:#59585a;margin-left: 0.6em;margin-top: 0.4em;z-index: 99999;"><span class="icon-cluster_CCCM" style="font-size:30px;color:#59585a;"></span> <b>SITE MANAGEMENT</b></h4>
+        <h4 id="title" style="font-family:'Helvetica';font-size:30px;color:#59585a;margin-left: 0.6em;margin-top: 0.7em;z-index: 99999;"><span class="icon-cluster_CCCM" style="font-size:30px;color:#59585a;"></span> <b>SITE MANAGEMENT</b></h4>
         <div id="textbox" class="z-depth-1">More than half of households (60%) reported being aware of the role of Cyclone Preparedness Program (CPP) volunteers in their areas. <b>Households plans for cyclone preparation suggest confidence in early preparation
             measures but confusion on further action.</b> While securing shelters was a widespread preparation measure (76%), findings suggest confusion for next steps, as half of households reported they would stay in their shelter (51%) and a
           large minority reported they would evacuate their shelter (38%).
@@ -357,7 +355,7 @@
   <div id="comms">
     <div class="row">
       <div class="col s12 m4 l3">
-        <h4 id="title" style="font-family:'Helvetica';font-size:30px;color:#59585a;margin-left: 0.6em;margin-top: 0.4em;z-index: 99999;"><span class="icon-cluster_emergency_telecommunications" style="font-size:30px;color:#59585a;"></span> <b>COMMUNICATION</b></h4>
+        <h4 id="title" style="font-family:'Helvetica';font-size:30px;color:#59585a;margin-left: 0.6em;margin-top: 0.7em;z-index: 99999;"><span class="icon-cluster_emergency_telecommunications" style="font-size:30px;color:#59585a;"></span> <b>COMMUNICATION</b></h4>
         <div id="textbox" class="z-depth-1">Mahjis were reported as the most common point of contact reported by refugees for both information and feedback. They were the most frequently reported information source that households were aware of (90%) and which they
           used in the 30 days prior to data collection (73%). Mahjis were also almost the sole feedback mechanisms that households reported using in the 30 days prior to data collection.</div>
 

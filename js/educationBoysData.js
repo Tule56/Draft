@@ -270,7 +270,7 @@ $.getJSON('data/campsjoin.geojson', function (geojson) {
 
 		legend: {
             title: {
-                text: 'School Attendance - Boys<br><span style="font-size: 16px; color: #59585a; font-weight: normal">% boys aged 6-14 reported to attend NGO-run</span><br><span style="font-size: 16px; color: #59585a; font-weight: normal">learning spaces in week prior to data collection</span>',
+                text: 'School Attendance - Boys<br><span style="font-size: 16px; color: #59585a; font-weight: normal">% boys aged 6-14 reported to attend <span style="font-size: 16px; color: #59585a; font-weight: bold; line-height: 2;">NGO-run</span><br><span style="font-size: 16px; color: #59585a; font-weight: bold; line-height: 2;">learning spaces </span><span style="font-size: 16px; color: #666; font-weight: normal">in the 7 days prior to data collection</span>',
             style: {
                 fontSize: '30px', color:'#59585a', fontFamily: 'Arial', align:'center',
             }},
