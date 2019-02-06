@@ -271,7 +271,6 @@ dropdown-trigger{
 }
 
 .tabs .active {
-  background: linear-gradient(to right,#0371c0,#479ddb) fixed;
   border-right: 1.8px solid #FAEB00;
   border-left: 1.8px solid #FAEB00;
 
